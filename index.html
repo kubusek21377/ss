@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jakub Twardziszewski</title>
+  <style>
+ 
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      text-align: center;
+    }
+    .calendar div {
+      border: 1px solid rgb(6, 76, 134);
+      padding: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .calendar div:hover {
+      background-color: #590094;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Kalendarz Adwentowy</h1>
+
+<div class="calendar" id="calendar">
+ 
+</div>
+
+<script>
+
+  const youtubeLinks = [
+    'https://www.youtube.com/watch?v=pClIOPkxMUM',
+    'https://www.youtube.com/watch?v=qSfvXjwYfiE',
+    'https://www.youtube.com/watch?v=MuM7g0jaodg',
+    'https://www.youtube.com/watch?v=He4my9kjuEc',
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://www.youtube.com/watch?v=CRrbPSPFAeY',
+    'https://www.youtube.com/watch?v=pyGwxhQO2oE',
+    "https://www.youtube.com/watch?v=XBkKt-atux0",
+    'https://www.youtube.com/watch?v=sXDBXVjKbp8',
+    'https://www.youtube.com/watch?v=KKDCgo0f44A',
+    'https://www.youtube.com/watch?v=nnHIfWCBTLY',
+    'https://www.youtube.com/watch?v=HUbxFOkax30',
+    'https://www.youtube.com/watch?v=PacJMNm5L0M',
+    'https://www.youtube.com/watch?v=lgCFiN_OTJk',
+    'https://www.youtube.com/watch?v=4cBRTlDKiUI',
+    'https://www.youtube.com/watch?v=hmvXj06WK9E',
+    'https://www.youtube.com/watch?v=8KFycmapyvw',
+    'https://www.youtube.com/watch?v=Tncr3xVqKnE',
+    'https://www.youtube.com/watch?v=vNe8108OS1M',
+    'https://www.youtube.com/watch?v=gBXA0Si12Rk',
+    'https://www.youtube.com/watch?v=C0loegM_-fQ',
+    'https://www.youtube.com/watch?v=XmIUC5GrafI',
+    'https://www.youtube.com/watch?v=jUs1fjOjVQs&t=647s',
+    'https://www.youtube.com/watch?v=gO6-GYGs36I',
+  ];
+
+  
+  function openYouTubeLink(day) {
+    const link = youtubeLinks[day - 1]; 
+    if (link) {
+      window.open(link);
+    } else {
+      alert('Brak filmu dla tego dnia adwentu.');
+    }
+  }
+
+
+  const calendarContainer = document.getElementById('calendar');
+  for (let day = 1; day <= 24; day++) {
+    const dayElement = document.createElement('div');
+    dayElement.textContent = day;
+    dayElement.addEventListener('click', () => openYouTubeLink(day));
+    calendarContainer.appendChild(dayElement);
+  }
+</script>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spis 24 kolęd</title>
+  <style>
+    /* Styl dla tabeli */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spis kolęd</title>
+    <style>
+      /* Styl dla tabeli */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid #830000;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #005050;
+      }
+    </style>
+  </head>
+  <body>
+  
+  
+    <h1>Spis kolęd</h1>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Nr</th>
+          <th>Tytuł</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Przybieżeli do Betlejem</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kolędy jakieś </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Wśród nocnej ciszy</td>
+        </tr>
+        <td>4</td>
+        <td>Cicha noc, święta noc</td>
+      </tr>
+      <td>5</td>
+      <td>nie radzę</td>
+    </tr>
+    <td>6</td>
+    <td>du ju speak inglisz</td>
+    </tr>
+    <td>7</td>
+    <td>Kevinek</td>
+    </tr>
+    <td>8</td>
+    <td>Wesoła Biesiada - Idą Święta</td>
+    </tr>
+    <td>9</td>
+    <td>Sidemen - Christmas Drillings</td>
+    </tr>
+    <td>10</td>
+    <td>Poradnik na zakupy świąteczne</td>
+    </tr>
+    <td>11</td>
+    <td>♪ Mateusz Morawiecki & Adam Niedzielski - Kolęda o wirusie (Deck the Halls Parodia)</td>
+    </tr>
+    <tr>
+    <td>12</td>
+    
+    
+    <td>Is that Freddy Fazbear?</td>
+   
+   <tr>
+    <td>13</td>
+    <td>Radosne Święta </td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Magiczna Skarpeta </td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Miłość Na Gwiazdkę </td>
+ </tr>
+    <td>16</td>
+    <td>Śnieżne Święta </td>
+  </tr>
+  <tr>
+    <td>17</td>
+  
+ 
+    <td>Świeta Na Alasce</td>
+  </tr>
+  <tr>
+    <td>18</td>
+  
+ 
+    <td>Wigilijna Miłość</td>
+  </tr>
+  <tr>
+    <td>19</td>
+ 
+  
+    <td>Śnieżna Pułapka </td>
+  </tr>
+  <tr>
+    <td>20</td>
+ 
+
+    <td>Królewskie święta</td>
+  </tr>
+  <tr>
+    <td>21</td>
+ 
+  
+    <td>Serce świąt</td>
+  </tr>
+  <tr>
+    <td>22</td>
+  
+ 
+    <td>Świąteczny Duch </td>
+  </tr>
+  <tr>
+    <td>23</td>
+ 
+    <td>gigachad budda</td>
+  </tr>
+  <tr>
+    <td>24</td>
+ 
+    <td>szczegóły z Kevina</td>
+    </tr>
+    </tbody>
+  </table>
+  
+  </body>
+  </html>
+  
+    </tbody>
+  </table>
+  
+
+
